@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import Intro from './components/Intro';
+import VotingIntro from './components/VotingIntro';
+import Golang from './components/Golang';
+import BGV from './components/BGV';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container max-w-screen-md mx-auto text-lg font-sans p-2">
+      <Header />
+      <Intro />
+      <VotingIntro />
+      <Golang />
+      <BGV />
     </div>
   );
 }
