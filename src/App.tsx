@@ -4,6 +4,7 @@ import Intro from './components/Intro';
 import VotingIntro from './components/VotingIntro';
 import Golang from './components/Golang';
 import BGV from './components/BGV';
+import Revonarchy from './components/Revonarchy';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <VotingIntro />
       <Golang />
       <BGV />
+      <Revonarchy />
     </div>
   );
 }

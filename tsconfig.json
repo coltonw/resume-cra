@@ -15,5 +15,5 @@
     "noEmit": true,
     "jsx": "react"
   },
-  "include": ["src", "src/media/video.d.ts"]
+  "include": ["src", "src/types.d.ts"]
 }
