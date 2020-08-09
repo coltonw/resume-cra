@@ -8,7 +8,9 @@ const iconClassName = 'flex-none w-8 h-8 mx-2 text-gray-800 fill-current';
 const Revonarchy = () => {
   return (
     <>
-      <h1>No more voting!</h1>
+      <h1 className="text-2xl mt-8 mb-4 font-bold uppercase font-serif">
+        No more voting!
+      </h1>
       <div className="my-4">
         I got tired of my favorite games never getting picked, so I decided to
         move away from voting to let people just pick a game and then rotate who
