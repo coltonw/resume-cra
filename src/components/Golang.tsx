@@ -33,7 +33,7 @@ const Golang = () => {
         .
       </div>
       <EmbeddedVideo src={GoVideo} />
-      <div className="w-full flex flex-row items-center mb-8">
+      <div className="w-full flex flex-row items-center   mb-12">
         <div className="flex-1 border-t-2 border-gray-200" />
         <DiGo className="flex-none block w-8 h-8 mx-4" />
         <div className="flex-1 border-t-2 border-gray-200" />

@@ -6,7 +6,7 @@ import logo from '../logo.svg';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="bg-white sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 mb-8 text-base">
+    <header className="bg-white sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3   mb-12 text-base">
       <div className="flex items-center justify-between px-4 py-3 sm:p-0">
         <div>
           <img

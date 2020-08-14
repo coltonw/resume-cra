@@ -51,7 +51,7 @@ const BGV = () => {
         Mocha, test coverage in Coveralls, CI/CD on Travis CI, Bootstrap, and
         using templates in Dust.js.
       </div>
-      <div className="w-full flex flex-row items-center mb-8">
+      <div className="w-full flex flex-row items-center   mb-12">
         <div className="flex-1 border-t-2 border-gray-200" />
         <DiNodejsSmall className={iconClassName} />
         <div
