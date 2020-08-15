@@ -1,63 +1,55 @@
 import React from 'react';
-import { DiBower, DiLess, DiGulp, DiReact } from 'react-icons/di';
+import { DiReact } from 'react-icons/di';
+import { FaAws } from 'react-icons/fa';
+import SectionHeading from './SectionHeading';
+import Link from './Link';
 import EmbeddedVideo from './EmbeddedVideo';
-import RevonarchyVideo from '../media/revonarchy.webm';
+import JudgementVideo from '../media/judgement.webm';
+import { ReactComponent as ElixirLogo } from '../media/elixir-logo.svg';
+import { ReactComponent as PhoenixLogo } from '../media/phoenix-logo.svg';
+import { ReactComponent as CircleCILogo } from '../media/circleci-logo.svg';
+import { ReactComponent as NivoLogo } from '../media/nivo-logo.svg';
+import { ReactComponent as BulmaLogo } from '../media/bulma-logo.svg';
+import { ReactComponent as WebpackLogo } from '../media/webpack-logo.svg';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-gray-800 fill-current';
 
 const Judgement = () => {
   return (
     <>
-      <h1 className="text-2xl mt-8 mb-4 font-bold uppercase font-serif">
-        A Triumphant Return to Voting!
-      </h1>
+      <SectionHeading>A Triumphant Return to Voting</SectionHeading>
       <div className="my-4">
         After a long hiatus, I decided to go back to the drawing board with
         voting. I had been reading about this new interesting voting method
         known as{' '}
-        <a
-          href="https://en.wikipedia.org/wiki/Majority_judgment"
-          className="text-gray-500 font-semibold hover:underline hover:text-gray-800"
-        >
+        <Link href="https://en.wikipedia.org/wiki/Majority_judgment">
           Majority Judgement
-        </a>
-        . I decided to implement a modernized board game night voting site (
-        <a
-          href="https://github.com/coltonw/majudge"
-          className="text-gray-500 font-semibold hover:underline hover:text-gray-800"
-        >
-          source
-        </a>
-        ;{' '}
-        <a
-          href="https://judge.willcolton.com"
-          className="text-gray-500 font-semibold hover:underline hover:text-gray-800"
-        >
-          deployed site
-        </a>
+        </Link>
+        . I implemented a modernized board game night voting site (
+        <Link href="https://github.com/coltonw/majudge">source</Link>;{' '}
+        <Link href="https://judge.willcolton.com">deployed site</Link>
         ).
       </div>
-      {/* <EmbeddedVideo src={RevonarchyVideo} />
+      <EmbeddedVideo src={JudgementVideo} />
       <div className="my-4">
-        Revonarchy was relatively short lived but I still learned some great
-        stuff including Bower, Koa, Less, Gulp, and most importantly React.
+        After learning a lot of frontend work in my day job, this project became
+        focused on learning more backend and devops. I used Elixir's Phoenix
+        Framework for the backend and deployed it using CircleCI and Amazon ECS.
+        The frontend was React using nivo for charts, Bulma for CSS, and webpack
+        for bundling.
       </div>
-      <div className="w-full flex flex-row items-center   mb-12">
+      <div className="w-full flex flex-row items-center mb-12">
         <div className="flex-1 border-t-2 border-gray-200" />
-        <DiBower className={iconClassName} />
-        <div
-          className="flex-none mx-2 text-gray-800"
-          style={{
-            fontFamily: 'italiana,sans-serif',
-          }}
-        >
-          koa
-        </div>
-        <DiLess className={iconClassName} />
-        <DiGulp className={iconClassName} />
-        <DiReact className={iconClassName} />
+        <ElixirLogo className={iconClassName} />
+        <PhoenixLogo className={`${iconClassName} w-12`} />
+        <CircleCILogo className={iconClassName} />
+        <FaAws className={iconClassName} />
+        <DiReact className={iconClassName} style={{ color: '#61dafb' }} />
+        <NivoLogo className={iconClassName} />
+        <BulmaLogo className={iconClassName} />
+        <WebpackLogo className={iconClassName} />
         <div className="flex-1 border-t-2 border-gray-200" />
-        </div> */}
+      </div>
     </>
   );
 };

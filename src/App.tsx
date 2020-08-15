@@ -5,6 +5,10 @@ import VotingIntro from './components/VotingIntro';
 import Golang from './components/Golang';
 import BGV from './components/BGV';
 import Revonarchy from './components/Revonarchy';
+import Judgement from './components/Judgement';
+import SensorsAreDown from './components/SensorsAreDown';
+import ICG from './components/ICG';
+import Museum from './components/Museum';
 
 function App() {
   return (
@@ -15,6 +19,10 @@ function App() {
       <Golang />
       <BGV />
       <Revonarchy />
+      <Judgement />
+      <SensorsAreDown />
+      <ICG />
+      <Museum />
     </div>
   );
 }
