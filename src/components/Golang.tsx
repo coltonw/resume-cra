@@ -2,7 +2,9 @@ import React from 'react';
 import { DiGo } from 'react-icons/di';
 import Link from './Link';
 import EmbeddedVideo from './EmbeddedVideo';
-import GoVideo from '../media/godemo3.webm';
+import IconLine from './IconLine';
+import GoWebm from '../media/godemo3.webm';
+import GoMp4 from '../media/godemo3.mp4';
 
 const Golang = () => {
   return (
@@ -19,12 +21,10 @@ const Golang = () => {
         and then eventually landed on a (highly questionable){' '}
         <Link href="https://play.golang.org/p/KG0KlWWbNFc">blend of both</Link>.
       </div>
-      <EmbeddedVideo src={GoVideo} />
-      <div className="w-full flex flex-row items-center mb-12">
-        <div className="flex-1 border-t-2 border-gray-200" />
+      <EmbeddedVideo webm={GoWebm} mp4={GoMp4} />
+      <IconLine>
         <DiGo className="flex-none block w-8 h-8 mx-4" />
-        <div className="flex-1 border-t-2 border-gray-200" />
-      </div>
+      </IconLine>
     </>
   );
 };

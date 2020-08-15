@@ -3,7 +3,8 @@ import { FaRedoAlt } from 'react-icons/fa';
 import throttle from 'lodash.throttle';
 
 interface EmbeddedVideoProps {
-  src: string;
+  webm: string;
+  mp4: string;
 }
 
 // Code modified from https://github.com/fkhadra/react-on-screen
@@ -48,7 +49,7 @@ const isVideoVisible = (
   }, 0);
 };
 
-const EmbeddedVideo: React.FC<EmbeddedVideoProps> = ({ src }) => {
+const EmbeddedVideo: React.FC<EmbeddedVideoProps> = ({ webm, mp4 }) => {
   const videoRef: React.Ref<HTMLVideoElement> = useRef(null);
   const [playing, setPlaying] = useState(false);
   const [played, setPlayed] = useState(false);
@@ -83,7 +84,7 @@ const EmbeddedVideo: React.FC<EmbeddedVideoProps> = ({ src }) => {
       videoElement.oncanplaythrough = null;
       videoElement.onended = null;
     };
-  }, [src, setCanPlay, setPlaying]);
+  }, [webm, setCanPlay, setPlaying]);
   useEffect(() => {
     if (isVisible && canPlay && videoRef.current && !played) {
       videoRef.current.play();
@@ -97,7 +98,6 @@ const EmbeddedVideo: React.FC<EmbeddedVideoProps> = ({ src }) => {
         <FaRedoAlt className="absolute inset-0 m-auto w-16 h-16 bg-gray-200 p-2 rounded-lg text-gray-800" />
       )}
       <video
-        src={src}
         ref={videoRef}
         playsInline
         muted
@@ -107,7 +107,10 @@ const EmbeddedVideo: React.FC<EmbeddedVideoProps> = ({ src }) => {
             videoRef.current.play();
           }
         }}
-      />
+      >
+        <source type="video/webm" src={webm} />
+        <source type="video/mp4" src={mp4} />
+      </video>
     </div>
   );
 };

@@ -4,7 +4,9 @@ import { FaAws } from 'react-icons/fa';
 import SectionHeading from './SectionHeading';
 import Link from './Link';
 import EmbeddedVideo from './EmbeddedVideo';
-import JudgementVideo from '../media/judgement.webm';
+import IconLine from './IconLine';
+import JudgementWebm from '../media/judgement.webm';
+import JudgementMp4 from '../media/judgement.mp4';
 import { ReactComponent as ElixirLogo } from '../media/elixir-logo.svg';
 import { ReactComponent as PhoenixLogo } from '../media/phoenix-logo.svg';
 import { ReactComponent as CircleCILogo } from '../media/circleci-logo.svg';
@@ -30,7 +32,7 @@ const Judgement = () => {
         <Link href="https://judge.willcolton.com">deployed site</Link>
         ).
       </div>
-      <EmbeddedVideo src={JudgementVideo} />
+      <EmbeddedVideo webm={JudgementWebm} mp4={JudgementMp4} />
       <div className="my-4">
         After learning a lot of frontend work in my day job, this project became
         focused on learning more backend and devops. I used Elixir's Phoenix
@@ -38,8 +40,7 @@ const Judgement = () => {
         The frontend was React using nivo for charts, Bulma for CSS, and webpack
         for bundling.
       </div>
-      <div className="w-full flex flex-row items-center mb-12">
-        <div className="flex-1 border-t-2 border-gray-200" />
+      <IconLine>
         <ElixirLogo className={iconClassName} />
         <PhoenixLogo className={`${iconClassName} w-12`} />
         <CircleCILogo className={iconClassName} />
@@ -48,8 +49,7 @@ const Judgement = () => {
         <NivoLogo className={iconClassName} />
         <BulmaLogo className={iconClassName} />
         <WebpackLogo className={iconClassName} />
-        <div className="flex-1 border-t-2 border-gray-200" />
-      </div>
+      </IconLine>
     </>
   );
 };

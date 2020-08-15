@@ -2,6 +2,7 @@ import React from 'react';
 import { FaAws } from 'react-icons/fa';
 import SectionHeading from './SectionHeading';
 import Link from './Link';
+import IconLine from './IconLine';
 import sensorsaredownAudio from '../media/sensorsaredown.mp3';
 import { ReactComponent as AlexaLogo } from '../media/alexa-logo.svg';
 import { ReactComponent as ServerlessLogo } from '../media/serverless-logo.svg';
@@ -38,14 +39,12 @@ const SensorsAreDown = () => {
         using the Serverless Framework. I also tried typed JavaScript for the
         first time but picked a losing horse and used flow-typed.
       </div>
-      <div className="w-full flex flex-row items-center mb-12">
-        <div className="flex-1 border-t-2 border-gray-200" />
+      <IconLine>
         <AlexaLogo className={iconClassName} />
         <FaAws className={iconClassName} />
         <ServerlessLogo className={iconClassName} />
         <FlowLogo className={iconClassName} />
-        <div className="flex-1 border-t-2 border-gray-200" />
-      </div>
+      </IconLine>
     </>
   );
 };

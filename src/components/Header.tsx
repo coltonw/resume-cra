@@ -34,24 +34,24 @@ const Header = () => {
           isOpen ? 'block' : 'hidden'
         } px-2 pt-2 pb-4 sm:flex sm:p-0`}
       >
-        <a
-          href="/cra"
+        {/*<a
+          href="/cra/"
           className="block px-2 py-1 text-gray-600 font-semibold rounded hover:text-gray-800"
         >
           CRA
         </a>
         <a
-          href="/gatsvy"
+          href="/gatsby/"
           className="mt-1 block px-2 py-1 text-gray-600 font-semibold rounded hover:text-gray-800 sm:mt-0 sm:ml-2"
         >
           Gatsby
         </a>
         <a
-          href="/svelte"
+          href="/svelte/"
           className="mt-1 block px-2 py-1 text-gray-600 font-semibold rounded hover:text-gray-800 sm:mt-0 sm:ml-2"
         >
           Svelte
-        </a>
+        </a>*/}
         <a
           href="https://github.com/coltonw"
           className="mt-1 block px-2 py-1 text-gray-600 font-semibold rounded hover:text-gray-800 sm:mt-0 sm:ml-2"

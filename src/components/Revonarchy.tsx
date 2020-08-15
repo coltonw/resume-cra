@@ -4,7 +4,9 @@ import { FaLess } from 'react-icons/fa';
 import SectionHeading from './SectionHeading';
 import Link from './Link';
 import EmbeddedVideo from './EmbeddedVideo';
-import RevonarchyVideo from '../media/revonarchy.webm';
+import IconLine from './IconLine';
+import RevonarchyWebm from '../media/revonarchy.webm';
+import RevonarchyMp4 from '../media/revonarchy.mp4';
 import { ReactComponent as RamdaLogo } from '../media/ramda-logo.svg';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-gray-800 fill-current';
@@ -22,14 +24,13 @@ const Revonarchy = () => {
         <Link href="https://github.com/coltonw/revonarchy">Source</Link>; site
         was never deployed)
       </div>
-      <EmbeddedVideo src={RevonarchyVideo} />
+      <EmbeddedVideo webm={RevonarchyWebm} mp4={RevonarchyMp4} />
       <div className="my-4">
         Revonarchy was relatively short lived but I still learned some great
         stuff including Bower, Koa, Less, Gulp, Ramda, and most importantly
         React.
       </div>
-      <div className="w-full flex flex-row items-center mb-12">
-        <div className="flex-1 border-t-2 border-gray-200" />
+      <IconLine>
         <DiBower className={iconClassName} />
         <div
           className="flex-none mx-2 text-gray-800"
@@ -43,8 +44,7 @@ const Revonarchy = () => {
         <DiGulp className={iconClassName} style={{ color: '#DB4446' }} />
         <RamdaLogo className={iconClassName} />
         <DiReact className={iconClassName} style={{ color: '#61dafb' }} />
-        <div className="flex-1 border-t-2 border-gray-200" />
-      </div>
+      </IconLine>
     </>
   );
 };

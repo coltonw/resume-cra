@@ -3,6 +3,7 @@ import { DiNodejsSmall, DiNpm, DiHeroku, DiBootstrap } from 'react-icons/di';
 import { FaStar } from 'react-icons/fa';
 import Link from './Link';
 import EmbeddedImage from './EmbeddedImage';
+import IconLine from './IconLine';
 import BGVScreenshot from '../media/bgv.png';
 import { ReactComponent as TravisCILogo } from '../media/travisci-logo.svg';
 import { ReactComponent as MochaLogo } from '../media/mocha.svg';
@@ -33,8 +34,7 @@ const BGV = () => {
         Mocha, test coverage in Coveralls, CI/CD on Travis CI, Bootstrap, and
         using templates in Dust.js.
       </div>
-      <div className="w-full flex flex-row items-center mb-12">
-        <div className="flex-1 border-t-2 border-gray-200" />
+      <IconLine>
         <DiNodejsSmall className={iconClassName} style={{ color: '#43853d' }} />
         <div
           className="flex-none mx-2 text-gray-800"
@@ -61,8 +61,7 @@ const BGV = () => {
         >
           Dust.js
         </div>
-        <div className="flex-1 border-t-2 border-gray-200" />
-      </div>
+      </IconLine>
     </>
   );
 };
