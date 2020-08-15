@@ -100,6 +100,7 @@ const EmbeddedVideo: React.FC<EmbeddedVideoProps> = ({ src }) => {
         src={src}
         ref={videoRef}
         playsInline
+        muted
         onClick={() => {
           if (!playing && videoRef.current) {
             setPlaying(true);

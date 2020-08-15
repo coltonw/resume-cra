@@ -4,6 +4,8 @@ import './base.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+window.history.replaceState({}, '', '/cra/');
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
