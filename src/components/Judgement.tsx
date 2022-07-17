@@ -28,9 +28,8 @@ const Judgement = () => {
           Majority Judgement
         </Link>
         . I implemented a modernized board game night voting site (
-        <Link href="https://github.com/coltonw/majudge">source</Link>;{' '}
-        <Link href="https://judge.willcolton.com">deployed site</Link>
-        ).
+        <Link href="https://github.com/coltonw/majudge">source</Link>; site no
+        longer deployed).
       </div>
       <EmbeddedVideo webm={JudgementWebm} mp4={JudgementMp4} />
       <div className="my-4">

@@ -4,8 +4,8 @@ import SectionHeading from './SectionHeading';
 import Link from './Link';
 import EmbeddedVideo from './EmbeddedVideo';
 import IconLine from './IconLine';
-import JudgementWebm from '../media/judgement.webm';
-import JudgementMp4 from '../media/judgement.mp4';
+import IcgWebm from '../media/icg.webm';
+import IcgMp4 from '../media/icg.mp4';
 import { ReactComponent as ScalaJSLogo } from '../media/scala-js-logo.svg';
 import { ReactComponent as CSharpLogo } from '../media/csharp-logo.svg';
 import { ReactComponent as PythonLogo } from '../media/python-logo.svg';
@@ -36,16 +36,12 @@ const ICG = () => (
       Over the holidays that year I discussed the idea with my brother and it
       was rekindled. Conveniently, I got a Humble Bundle with a bunch of card
       art assets for use in Unity, so I decided to build the game in Unity (
-      <Link href="https://github.com/coltonw/instantaneousUnity">
-        frontend source
-      </Link>
-      ;{' '}
       <Link href="https://github.com/coltonw/instantaneous">
         backend source
       </Link>
       ; game not released).
     </div>
-    {/* EmbeddedVideo goes here */}
+    <EmbeddedVideo webm={IcgWebm} mp4={IcgMp4} />
     <div className="my-4">
       The game client was coded in C# and built with Unity. The backend was
       coded in Python deployed to AWS Lambda with the Serverless Framework.
