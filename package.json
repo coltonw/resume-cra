@@ -7,20 +7,20 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "@types/jest": "^24.9.1",
-    "@types/node": "^12.12.53",
-    "@types/react": "^16.9.44",
-    "@types/react-dom": "^16.9.8",
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.0.5",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
     "lodash.throttle": "^4.1.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^3.10.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^5.0.1",
     "tailwindcss": "^1.6.2",
-    "typescript": "^3.7.5"
+    "typescript": "^4.7.4"
   },
   "scripts": {
-    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -48,8 +48,10 @@
   },
   "devDependencies": {
     "fibers": "^5.0.0",
-    "postcss": "^7.0.32",
-    "postcss-cli": "^7.1.1",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^7.7.2",
     "sass": "^1.26.10"
   }
 }

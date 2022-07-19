@@ -8,6 +8,7 @@ import Revonarchy from './components/Revonarchy';
 import Judgement from './components/Judgement';
 import SensorsAreDown from './components/SensorsAreDown';
 import ICG from './components/ICG';
+import PuzzleSync from './components/PuzzleSync';
 import Museum from './components/Museum';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Judgement />
       <SensorsAreDown />
       <ICG />
+      <PuzzleSync />
       <Museum />
     </div>
   );
