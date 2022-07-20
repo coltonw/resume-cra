@@ -9,6 +9,7 @@ import Judgement from './components/Judgement';
 import SensorsAreDown from './components/SensorsAreDown';
 import ICG from './components/ICG';
 import PuzzleSync from './components/PuzzleSync';
+import BoatsAndBridges from './components/BoatsAndBridges';
 import Museum from './components/Museum';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <SensorsAreDown />
       <ICG />
       <PuzzleSync />
+      <BoatsAndBridges />
       <Museum />
     </div>
   );
