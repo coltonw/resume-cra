@@ -1,15 +1,15 @@
 import React from 'react';
 import { FaAws, FaUnity } from 'react-icons/fa';
-import SectionHeading from './SectionHeading';
-import Link from './Link';
-import EmbeddedVideo from './EmbeddedVideo';
-import IconLine from './IconLine';
-import IcgWebm from '../media/icg.webm';
-import IcgMp4 from '../media/icg.mp4';
-import { ReactComponent as ScalaJSLogo } from '../media/scala-js-logo.svg';
-import { ReactComponent as CSharpLogo } from '../media/csharp-logo.svg';
-import { ReactComponent as PythonLogo } from '../media/python-logo.svg';
-import { ReactComponent as ServerlessLogo } from '../media/serverless-logo.svg';
+import SectionHeading from '../SectionHeading';
+import Link from '../Link';
+import EmbeddedVideo from '../EmbeddedVideo';
+import IconLine from '../IconLine';
+import IcgWebm from '../../media/icg.webm';
+import IcgMp4 from '../../media/icg.mp4';
+import { ReactComponent as ScalaJSLogo } from '../../media/scala-js-logo.svg';
+import { ReactComponent as CSharpLogo } from '../../media/csharp-logo.svg';
+import { ReactComponent as PythonLogo } from '../../media/python-logo.svg';
+import { ReactComponent as ServerlessLogo } from '../../media/serverless-logo.svg';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-gray-800 fill-current';
 

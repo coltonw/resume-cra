@@ -1,12 +1,12 @@
 import React from 'react';
 import { FaAws } from 'react-icons/fa';
-import SectionHeading from './SectionHeading';
-import Link from './Link';
-import IconLine from './IconLine';
-import sensorsaredownAudio from '../media/sensorsaredown.mp3';
-import { ReactComponent as AlexaLogo } from '../media/alexa-logo.svg';
-import { ReactComponent as ServerlessLogo } from '../media/serverless-logo.svg';
-import { ReactComponent as FlowLogo } from '../media/flow-logo.svg';
+import SectionHeading from '../SectionHeading';
+import Link from '../Link';
+import IconLine from '../IconLine';
+import sensorsaredownAudio from '../../media/sensorsaredown.mp3';
+import { ReactComponent as AlexaLogo } from '../../media/alexa-logo.svg';
+import { ReactComponent as ServerlessLogo } from '../../media/serverless-logo.svg';
+import { ReactComponent as FlowLogo } from '../../media/flow-logo.svg';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-gray-800 fill-current';
 

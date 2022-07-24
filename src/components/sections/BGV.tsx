@@ -1,13 +1,13 @@
 import React from 'react';
 import { DiNodejsSmall, DiNpm, DiHeroku, DiBootstrap } from 'react-icons/di';
 import { FaStar } from 'react-icons/fa';
-import Link from './Link';
-import EmbeddedImage from './EmbeddedImage';
-import IconLine from './IconLine';
-import BGVScreenshot from '../media/bgv.png';
-import { ReactComponent as TravisCILogo } from '../media/travisci-logo.svg';
-import { ReactComponent as MochaLogo } from '../media/mocha.svg';
-import { ReactComponent as MongoDBLogo } from '../media/mongodb-logo.svg';
+import Link from '../Link';
+import EmbeddedImage from '../EmbeddedImage';
+import IconLine from '../IconLine';
+import BGVScreenshot from '../../media/bgv.png';
+import { ReactComponent as TravisCILogo } from '../../media/travisci-logo.svg';
+import { ReactComponent as MochaLogo } from '../../media/mocha.svg';
+import { ReactComponent as MongoDBLogo } from '../../media/mongodb-logo.svg';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-gray-800 fill-current';
 

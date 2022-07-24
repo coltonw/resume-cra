@@ -2,14 +2,14 @@ import React from 'react';
 import { DiNodejsSmall } from 'react-icons/di';
 import { FaUnity } from 'react-icons/fa';
 import { SiBabel, SiRust } from 'react-icons/si';
-import SectionHeading from './SectionHeading';
-import Link from './Link';
-import EmbeddedVideo from './EmbeddedVideo';
-import IconLine from './IconLine';
-import BoatsAndBridgesWebm from '../media/boatsandbridges.webm';
-import BoatsAndBridgesMp4 from '../media/boatsandbridges.mp4';
-import { ReactComponent as WebpackLogo } from '../media/webpack-logo.svg';
-import { ReactComponent as CSharpLogo } from '../media/csharp-logo.svg';
+import SectionHeading from '../SectionHeading';
+import Link from '../Link';
+import EmbeddedVideo from '../EmbeddedVideo';
+import IconLine from '../IconLine';
+import BoatsAndBridgesWebm from '../../media/boatsandbridges.webm';
+import BoatsAndBridgesMp4 from '../../media/boatsandbridges.mp4';
+import { ReactComponent as WebpackLogo } from '../../media/webpack-logo.svg';
+import { ReactComponent as CSharpLogo } from '../../media/csharp-logo.svg';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-gray-800 fill-current';
 

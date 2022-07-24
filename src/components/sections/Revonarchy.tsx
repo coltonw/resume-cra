@@ -1,13 +1,13 @@
 import React from 'react';
 import { DiBower, DiGulp, DiReact } from 'react-icons/di';
 import { FaLess } from 'react-icons/fa';
-import SectionHeading from './SectionHeading';
-import Link from './Link';
-import EmbeddedVideo from './EmbeddedVideo';
-import IconLine from './IconLine';
-import RevonarchyWebm from '../media/revonarchy.webm';
-import RevonarchyMp4 from '../media/revonarchy.mp4';
-import { ReactComponent as RamdaLogo } from '../media/ramda-logo.svg';
+import SectionHeading from '../SectionHeading';
+import Link from '../Link';
+import EmbeddedVideo from '../EmbeddedVideo';
+import IconLine from '../IconLine';
+import RevonarchyWebm from '../../media/revonarchy.webm';
+import RevonarchyMp4 from '../../media/revonarchy.mp4';
+import { ReactComponent as RamdaLogo } from '../../media/ramda-logo.svg';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-gray-800 fill-current';
 

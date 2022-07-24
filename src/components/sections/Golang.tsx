@@ -1,10 +1,10 @@
 import React from 'react';
 import { DiGo } from 'react-icons/di';
-import Link from './Link';
-import EmbeddedVideo from './EmbeddedVideo';
-import IconLine from './IconLine';
-import GoWebm from '../media/godemo3.webm';
-import GoMp4 from '../media/godemo3.mp4';
+import Link from '../Link';
+import EmbeddedVideo from '../EmbeddedVideo';
+import IconLine from '../IconLine';
+import GoWebm from '../../media/godemo3.webm';
+import GoMp4 from '../../media/godemo3.mp4';
 
 const Golang = () => {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
 import { SiTailwindcss } from 'react-icons/si';
-import SectionHeading from './SectionHeading';
-import IconLine from './IconLine';
-import { ReactComponent as CRALogo } from '../media/cra-logo.svg';
+import SectionHeading from '../SectionHeading';
+import IconLine from '../IconLine';
+import { ReactComponent as CRALogo } from '../../media/cra-logo.svg';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-gray-800 fill-current';
 

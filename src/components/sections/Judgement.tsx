@@ -1,18 +1,18 @@
 import React from 'react';
 import { DiReact } from 'react-icons/di';
 import { FaAws } from 'react-icons/fa';
-import SectionHeading from './SectionHeading';
-import Link from './Link';
-import EmbeddedVideo from './EmbeddedVideo';
-import IconLine from './IconLine';
-import JudgementWebm from '../media/judgement.webm';
-import JudgementMp4 from '../media/judgement.mp4';
-import { ReactComponent as ElixirLogo } from '../media/elixir-logo.svg';
-import { ReactComponent as PhoenixLogo } from '../media/phoenix-logo.svg';
-import { ReactComponent as CircleCILogo } from '../media/circleci-logo.svg';
-import { ReactComponent as NivoLogo } from '../media/nivo-logo.svg';
-import { ReactComponent as BulmaLogo } from '../media/bulma-logo.svg';
-import { ReactComponent as WebpackLogo } from '../media/webpack-logo.svg';
+import SectionHeading from '../SectionHeading';
+import Link from '../Link';
+import EmbeddedVideo from '../EmbeddedVideo';
+import IconLine from '../IconLine';
+import JudgementWebm from '../../media/judgement.webm';
+import JudgementMp4 from '../../media/judgement.mp4';
+import { ReactComponent as ElixirLogo } from '../../media/elixir-logo.svg';
+import { ReactComponent as PhoenixLogo } from '../../media/phoenix-logo.svg';
+import { ReactComponent as CircleCILogo } from '../../media/circleci-logo.svg';
+import { ReactComponent as NivoLogo } from '../../media/nivo-logo.svg';
+import { ReactComponent as BulmaLogo } from '../../media/bulma-logo.svg';
+import { ReactComponent as WebpackLogo } from '../../media/webpack-logo.svg';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-gray-800 fill-current';
 

@@ -1,16 +1,16 @@
 import React from 'react';
 import Header from './components/Header';
-import Intro from './components/Intro';
-import VotingIntro from './components/VotingIntro';
-import Golang from './components/Golang';
-import BGV from './components/BGV';
-import Revonarchy from './components/Revonarchy';
-import Judgement from './components/Judgement';
-import SensorsAreDown from './components/SensorsAreDown';
-import ICG from './components/ICG';
-import PuzzleSync from './components/PuzzleSync';
-import BoatsAndBridges from './components/BoatsAndBridges';
-import Museum from './components/Museum';
+import Intro from './components/sections/Intro';
+import VotingIntro from './components/sections/VotingIntro';
+import Golang from './components/sections/Golang';
+import BGV from './components/sections/BGV';
+import Revonarchy from './components/sections/Revonarchy';
+import Judgement from './components/sections/Judgement';
+import SensorsAreDown from './components/sections/SensorsAreDown';
+import ICG from './components/sections/ICG';
+import PuzzleSync from './components/sections/PuzzleSync';
+import BoatsAndBridges from './components/sections/BoatsAndBridges';
+import Museum from './components/sections/Museum';
 
 function App() {
   return (
@@ -24,8 +24,8 @@ function App() {
       <Judgement />
       <SensorsAreDown />
       <ICG />
-      <PuzzleSync />
       <BoatsAndBridges />
+      <PuzzleSync />
       <Museum />
     </div>
   );
