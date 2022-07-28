@@ -10,6 +10,7 @@ import SensorsAreDown from './components/sections/SensorsAreDown';
 import ICG from './components/sections/ICG';
 import PuzzleSync from './components/sections/PuzzleSync';
 import BoatsAndBridges from './components/sections/BoatsAndBridges';
+import DanyconSchedule from './components/sections/DanyconSchedule';
 import Museum from './components/sections/Museum';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <ICG />
       <BoatsAndBridges />
       <PuzzleSync />
+      <DanyconSchedule />
       <Museum />
     </div>
   );

@@ -1,6 +1,6 @@
 # resume-cra
 
-This is a [Create React App](https://github.com/facebook/create-react-app) implementation of my homepage [willcolton.com](https://willcolton.com/cra) .
+This is a [Create React App](https://github.com/facebook/create-react-app) implementation of my homepage [willcolton.com](https://cra.willcolton.com/) .
 
 ## One Site, Many Implementations
 

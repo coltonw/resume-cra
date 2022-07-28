@@ -17,7 +17,7 @@ const PuzzleSync = () => (
   <>
     <SectionHeading>Fun with family</SectionHeading>
     <div className="my-4">
-      My family does an annual get together where we play games and solve
+      My family does an annual get-together where we play games and solve
       puzzles together. For the occasion I decided to make a little quiz game,
       sort of a cooperative version of sporcle. I used the opportunity to learn
       Gatsby and sharpen my skills with websockets (
