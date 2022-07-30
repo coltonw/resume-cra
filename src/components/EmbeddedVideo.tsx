@@ -93,9 +93,9 @@ const EmbeddedVideo: React.FC<EmbeddedVideoProps> = ({ webm, mp4 }) => {
     }
   }, [isVisible, canPlay, played, setPlaying, setPlayed]);
   return (
-    <div className="relative my-6 border-2 border-gray-200">
+    <div className="relative my-6 border-2 border-stone-200">
       {!playing && played && (
-        <FaRedoAlt className="absolute inset-0 m-auto w-16 h-16 bg-gray-200 p-2 rounded-lg text-gray-800" />
+        <FaRedoAlt className="absolute inset-0 m-auto w-16 h-16 bg-stone-100 p-2 rounded-lg text-stone-800" />
       )}
       <video
         ref={videoRef}

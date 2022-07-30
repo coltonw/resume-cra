@@ -3,20 +3,22 @@ import { DiNodejsSmall } from 'react-icons/di';
 import { FaUnity } from 'react-icons/fa';
 import { SiBabel, SiRust } from 'react-icons/si';
 import SectionHeading from '../SectionHeading';
+import Paragraph from '../Paragraph';
 import Link from '../Link';
 import EmbeddedVideo from '../EmbeddedVideo';
 import IconLine from '../IconLine';
+import LineDate from '../LineDate';
 import BoatsAndBridgesWebm from '../../media/boatsandbridges.webm';
 import BoatsAndBridgesMp4 from '../../media/boatsandbridges.mp4';
 import { ReactComponent as WebpackLogo } from '../../media/webpack-logo.svg';
 import { ReactComponent as CSharpLogo } from '../../media/csharp-logo.svg';
 
-const iconClassName = 'flex-none w-8 h-8 mx-2 text-gray-800 fill-current';
+const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
 const BoatsAndBridges = () => (
   <>
-    <SectionHeading>Making a real game</SectionHeading>
-    <div className="my-4">
+    <SectionHeading>Making a Real Game</SectionHeading>
+    <Paragraph>
       In 2016, I made a couple modified{' '}
       <Link href="https://en.wikipedia.org/wiki/Hashiwokakero">
         hashi puzzles
@@ -27,17 +29,17 @@ const BoatsAndBridges = () => (
         Hexcells series
       </Link>{' '}
       except instead of modified minesweeper I would do modified hashi.
-    </div>
-    <div className="my-4">
+    </Paragraph>
+    <Paragraph>
       The idea evolved over time but eventually I started working on a level
       solver and accompanying level editor to build some puzzles. (
       <Link href="https://github.com/coltonw/boats-and-bridges/">
         level editor source
       </Link>
       ).
-    </div>
+    </Paragraph>
     <EmbeddedVideo webm={BoatsAndBridgesWebm} mp4={BoatsAndBridgesMp4} />
-    <div className="my-4">
+    <Paragraph>
       I spent a lot of time on a 3D Unity implementation of the game but every
       time I developed new visuals they would either not look how I wanted or
       they would obscure the gameplay elements to the point of being a net
@@ -47,17 +49,21 @@ const BoatsAndBridges = () => (
       </Link>{' '}
       and being disappointed with the results, I took an extended break from the
       project.
-    </div>
-    <div className="my-4">
+    </Paragraph>
+    <Paragraph>
       Unlike most of my projects, this project was much more focused on
       execution rather than learning new technologies. The level solver was
       built in node with a heavy use of lodash for array manipulation. The level
       editor was just vanilla ES6 JavaScript using babel to transpile and
       webpack to bundle. I had a brief diversion where I learned Rust and
       started migrating the level editor to Rust for performance improvements.
-    </div>
+    </Paragraph>
     <IconLine>
+      <LineDate>2020-2021</LineDate>
       <DiNodejsSmall className={iconClassName} style={{ color: '#43853d' }} />
+      <div className="flex-none mx-2 text-black underline decoration-blue-600 decoration-2 font-bold">
+        Lo
+      </div>
       <SiBabel className={`${iconClassName} text-yellow-600`} />
       <WebpackLogo className={iconClassName} />
       <FaUnity className={iconClassName} />

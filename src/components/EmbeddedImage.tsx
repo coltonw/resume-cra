@@ -6,7 +6,7 @@ interface EmbeddedImageProps {
 }
 
 const EmbeddedImage: React.FC<EmbeddedImageProps> = ({ src, alt }) => {
-  return <img src={src} className="border-2 border-gray-200 my-6" alt={alt} />;
+  return <img src={src} className="border-2 border-stone-200 my-6" alt={alt} />;
 };
 
 export default EmbeddedImage;

@@ -2,20 +2,22 @@ import React from 'react';
 import { DiBower, DiGulp, DiReact } from 'react-icons/di';
 import { FaLess } from 'react-icons/fa';
 import SectionHeading from '../SectionHeading';
+import Paragraph from '../Paragraph';
 import Link from '../Link';
 import EmbeddedVideo from '../EmbeddedVideo';
 import IconLine from '../IconLine';
+import LineDate from '../LineDate';
 import RevonarchyWebm from '../../media/revonarchy.webm';
 import RevonarchyMp4 from '../../media/revonarchy.mp4';
 import { ReactComponent as RamdaLogo } from '../../media/ramda-logo.svg';
 
-const iconClassName = 'flex-none w-8 h-8 mx-2 text-gray-800 fill-current';
+const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
 const Revonarchy = () => {
   return (
     <>
-      <SectionHeading>No more voting!</SectionHeading>
-      <div className="my-4">
+      <SectionHeading>No More Voting!</SectionHeading>
+      <Paragraph>
         I got tired of my favorite games never getting picked, so I decided to
         move away from voting to let people just pick a game and then rotate who
         picks the game each time. The problem that quickly showed up was that
@@ -23,17 +25,18 @@ const Revonarchy = () => {
         Thus Revonarchy was born. (
         <Link href="https://github.com/coltonw/revonarchy">Source</Link>; site
         was never deployed)
-      </div>
+      </Paragraph>
       <EmbeddedVideo webm={RevonarchyWebm} mp4={RevonarchyMp4} />
-      <div className="my-4">
+      <Paragraph>
         Revonarchy was relatively short lived but I still learned some great
         stuff including Bower, Koa, Less, Gulp, Ramda, and most importantly
         React.
-      </div>
+      </Paragraph>
       <IconLine>
+        <LineDate>2015</LineDate>
         <DiBower className={iconClassName} />
         <div
-          className="flex-none mx-2 text-gray-800"
+          className="flex-none mx-2 text-stone-700"
           style={{
             fontFamily: 'italiana,sans-serif',
           }}
