@@ -3,11 +3,12 @@ import { DiReact } from 'react-icons/di';
 import { FaAws } from 'react-icons/fa';
 import { SiGatsby, SiAuth0, SiGraphql } from 'react-icons/si';
 import SectionHeading from '../SectionHeading';
+import SubHeading from '../SubHeading';
+import SubHeadingTitle from '../SubHeadingTitle';
 import Paragraph from '../Paragraph';
 import Link from '../Link';
 import EmbeddedVideo from '../EmbeddedVideo';
 import IconLine from '../IconLine';
-import LineDate from '../LineDate';
 import PuzzleSyncWebm from '../../media/puzzlesync.webm';
 import PuzzleSyncMp4 from '../../media/puzzlesync.mp4';
 import { ReactComponent as CircleCILogo } from '../../media/circleci-logo.svg';
@@ -18,6 +19,18 @@ const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 const PuzzleSync = () => (
   <>
     <SectionHeading>Fun with Family</SectionHeading>
+    <SubHeading>
+      <SubHeadingTitle>PuzzleSync - 2020</SubHeadingTitle>
+      <IconLine>
+        <SiGatsby className={`${iconClassName} text-purple-700`} />
+        <DiReact className={iconClassName} style={{ color: '#61dafb' }} />
+        <SiGraphql className={`${iconClassName} text-pink-600`} />
+        <SiAuth0 className={`${iconClassName} text-orange-600`} />
+        <CircleCILogo className={iconClassName} />
+        <FaAws className={iconClassName} />
+        <ServerlessLogo className={iconClassName} />
+      </IconLine>
+    </SubHeading>
     <Paragraph>
       My family does an annual get-together where we play games and solve
       puzzles together. For the occasion I decided to make a little quiz game,
@@ -40,16 +53,6 @@ const PuzzleSync = () => (
       backend. I deployed the backend using Serverless and included Lambdas,
       DynamoDB, and ApiGateway from AWS.
     </Paragraph>
-    <IconLine>
-      <LineDate>2020</LineDate>
-      <SiGatsby className={`${iconClassName} text-purple-700`} />
-      <DiReact className={iconClassName} style={{ color: '#61dafb' }} />
-      <SiGraphql className={`${iconClassName} text-pink-600`} />
-      <SiAuth0 className={`${iconClassName} text-orange-600`} />
-      <CircleCILogo className={iconClassName} />
-      <FaAws className={iconClassName} />
-      <ServerlessLogo className={iconClassName} />
-    </IconLine>
   </>
 );
 

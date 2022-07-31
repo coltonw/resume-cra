@@ -1,10 +1,11 @@
 import React from 'react';
 import { FaAws } from 'react-icons/fa';
 import SectionHeading from '../SectionHeading';
+import SubHeading from '../SubHeading';
+import SubHeadingTitle from '../SubHeadingTitle';
 import Paragraph from '../Paragraph';
 import Link from '../Link';
 import IconLine from '../IconLine';
-import LineDate from '../LineDate';
 import sensorsaredownAudio from '../../media/sensorsaredown.mp3';
 import { ReactComponent as AlexaLogo } from '../../media/alexa-logo.svg';
 import { ReactComponent as ServerlessLogo } from '../../media/serverless-logo.svg';
@@ -16,6 +17,15 @@ const SensorsAreDown = () => {
   return (
     <>
       <SectionHeading>Gaming Side Projects</SectionHeading>
+      <SubHeading>
+        <SubHeadingTitle>Sensors Are Down - 2017</SubHeadingTitle>
+        <IconLine>
+          <AlexaLogo className={iconClassName} />
+          <FaAws className={iconClassName} />
+          <ServerlessLogo className={iconClassName} />
+          <FlowLogo className={iconClassName} />
+        </IconLine>
+      </SubHeading>
       <Paragraph>
         I have always loved designing and programming video games, but the
         problem is that video games have a lot of art and I do not enjoy making
@@ -41,13 +51,6 @@ const SensorsAreDown = () => {
         using the Serverless Framework. I also tried typed JavaScript for the
         first time but picked a losing horse and used flow-typed.
       </Paragraph>
-      <IconLine>
-        <LineDate>2017</LineDate>
-        <AlexaLogo className={iconClassName} />
-        <FaAws className={iconClassName} />
-        <ServerlessLogo className={iconClassName} />
-        <FlowLogo className={iconClassName} />
-      </IconLine>
     </>
   );
 };

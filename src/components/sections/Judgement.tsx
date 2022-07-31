@@ -2,11 +2,12 @@ import React from 'react';
 import { DiReact } from 'react-icons/di';
 import { FaAws } from 'react-icons/fa';
 import SectionHeading from '../SectionHeading';
+import SubHeading from '../SubHeading';
+import SubHeadingTitle from '../SubHeadingTitle';
 import Paragraph from '../Paragraph';
 import Link from '../Link';
 import EmbeddedVideo from '../EmbeddedVideo';
 import IconLine from '../IconLine';
-import LineDate from '../LineDate';
 import JudgementWebm from '../../media/judgement.webm';
 import JudgementMp4 from '../../media/judgement.mp4';
 import { ReactComponent as ElixirLogo } from '../../media/elixir-logo.svg';
@@ -22,6 +23,19 @@ const Judgement = () => {
   return (
     <>
       <SectionHeading>A Triumphant Return to Voting</SectionHeading>
+      <SubHeading>
+        <SubHeadingTitle>Majority Judgment - 2019</SubHeadingTitle>
+        <IconLine>
+          <ElixirLogo className={iconClassName} />
+          <PhoenixLogo className={`${iconClassName} w-12`} />
+          <CircleCILogo className={iconClassName} />
+          <FaAws className={iconClassName} />
+          <DiReact className={iconClassName} style={{ color: '#61dafb' }} />
+          <NivoLogo className={iconClassName} />
+          <BulmaLogo className={iconClassName} />
+          <WebpackLogo className={iconClassName} />
+        </IconLine>
+      </SubHeading>
       <Paragraph>
         After a long hiatus, I decided to go back to the drawing board with
         voting. I had been reading about this new interesting voting method
@@ -41,17 +55,6 @@ const Judgement = () => {
         The frontend was React using nivo for charts, Bulma for CSS, and webpack
         for bundling.
       </Paragraph>
-      <IconLine>
-        <LineDate>2019</LineDate>
-        <ElixirLogo className={iconClassName} />
-        <PhoenixLogo className={`${iconClassName} w-12`} />
-        <CircleCILogo className={iconClassName} />
-        <FaAws className={iconClassName} />
-        <DiReact className={iconClassName} style={{ color: '#61dafb' }} />
-        <NivoLogo className={iconClassName} />
-        <BulmaLogo className={iconClassName} />
-        <WebpackLogo className={iconClassName} />
-      </IconLine>
     </>
   );
 };

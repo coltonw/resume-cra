@@ -3,11 +3,12 @@ import { DiNodejsSmall } from 'react-icons/di';
 import { FaUnity } from 'react-icons/fa';
 import { SiBabel, SiRust } from 'react-icons/si';
 import SectionHeading from '../SectionHeading';
+import SubHeading from '../SubHeading';
+import SubHeadingTitle from '../SubHeadingTitle';
 import Paragraph from '../Paragraph';
 import Link from '../Link';
 import EmbeddedVideo from '../EmbeddedVideo';
 import IconLine from '../IconLine';
-import LineDate from '../LineDate';
 import BoatsAndBridgesWebm from '../../media/boatsandbridges.webm';
 import BoatsAndBridgesMp4 from '../../media/boatsandbridges.mp4';
 import { ReactComponent as WebpackLogo } from '../../media/webpack-logo.svg';
@@ -18,6 +19,20 @@ const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 const BoatsAndBridges = () => (
   <>
     <SectionHeading>Making a Real Game</SectionHeading>
+    <SubHeading>
+      <SubHeadingTitle>Boats and Bridges - 2020-2021</SubHeadingTitle>
+      <IconLine>
+        <DiNodejsSmall className={iconClassName} style={{ color: '#43853d' }} />
+        <div className="flex-none mx-2 text-black underline decoration-blue-600 decoration-2 font-bold">
+          Lo
+        </div>
+        <SiBabel className={`${iconClassName} text-yellow-600`} />
+        <WebpackLogo className={iconClassName} />
+        <FaUnity className={iconClassName} />
+        <CSharpLogo className={iconClassName} />
+        <SiRust className={iconClassName} />
+      </IconLine>
+    </SubHeading>
     <Paragraph>
       In 2016, I made a couple modified{' '}
       <Link href="https://en.wikipedia.org/wiki/Hashiwokakero">
@@ -58,18 +73,6 @@ const BoatsAndBridges = () => (
       webpack to bundle. I had a brief diversion where I learned Rust and
       started migrating the level editor to Rust for performance improvements.
     </Paragraph>
-    <IconLine>
-      <LineDate>2020-2021</LineDate>
-      <DiNodejsSmall className={iconClassName} style={{ color: '#43853d' }} />
-      <div className="flex-none mx-2 text-black underline decoration-blue-600 decoration-2 font-bold">
-        Lo
-      </div>
-      <SiBabel className={`${iconClassName} text-yellow-600`} />
-      <WebpackLogo className={iconClassName} />
-      <FaUnity className={iconClassName} />
-      <CSharpLogo className={iconClassName} />
-      <SiRust className={iconClassName} />
-    </IconLine>
   </>
 );
 

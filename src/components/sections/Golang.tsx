@@ -1,16 +1,23 @@
 import React from 'react';
 import { DiGo } from 'react-icons/di';
+import SubHeading from '../SubHeading';
+import SubHeadingTitle from '../SubHeadingTitle';
 import Paragraph from '../Paragraph';
 import Link from '../Link';
 import EmbeddedVideo from '../EmbeddedVideo';
 import IconLine from '../IconLine';
-import LineDate from '../LineDate';
 import GoWebm from '../../media/godemo3.webm';
 import GoMp4 from '../../media/godemo3.mp4';
 
 const Golang = () => {
   return (
     <>
+      <SubHeading>
+        <SubHeadingTitle>Go Vote Tally - 2013-2014</SubHeadingTitle>
+        <IconLine>
+          <DiGo className="flex-none block w-8 h-8 mx-4" />
+        </IconLine>
+      </SubHeading>
       <Paragraph>
         All of my side projects are partially rooted in learning something new.
         At the time, I was learning Go and so I wrote a few different voting
@@ -24,10 +31,6 @@ const Golang = () => {
         <Link href="https://play.golang.org/p/KG0KlWWbNFc">blend of both</Link>.
       </Paragraph>
       <EmbeddedVideo webm={GoWebm} mp4={GoMp4} />
-      <IconLine>
-        <LineDate>2013-2014</LineDate>
-        <DiGo className="flex-none block w-8 h-8 mx-4" />
-      </IconLine>
     </>
   );
 };

@@ -1,10 +1,8 @@
 import React from 'react';
 
 const IconLine: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <div className="w-full flex flex-wrap flex-row items-center justify-center mb-12">
-    <div className="flex-1 border-t-2 border-stone-400 hidden sm:block" />
+  <div className="flex flex-wrap flex-row items-center justify-start">
     {children}
-    <div className="flex-1 border-t-2 border-stone-400 hidden sm:block" />
   </div>
 );
 

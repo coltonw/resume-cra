@@ -1,11 +1,11 @@
 import React from 'react';
 import { DiNodejsSmall, DiNpm, DiHeroku, DiBootstrap } from 'react-icons/di';
-import { FaStar } from 'react-icons/fa';
+import SubHeading from '../SubHeading';
+import SubHeadingTitle from '../SubHeadingTitle';
 import Paragraph from '../Paragraph';
 import Link from '../Link';
 import EmbeddedImage from '../EmbeddedImage';
 import IconLine from '../IconLine';
-import LineDate from '../LineDate';
 import BGVScreenshot from '../../media/bgv.png';
 import { ReactComponent as TravisCILogo } from '../../media/travisci-logo.svg';
 import { ReactComponent as MochaLogo } from '../../media/mocha.svg';
@@ -16,6 +16,39 @@ const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 const BGV = () => {
   return (
     <>
+      <SubHeading>
+        <SubHeadingTitle>Indifference Engine - 2014-2015</SubHeadingTitle>
+        <IconLine>
+          <DiNodejsSmall
+            className={iconClassName}
+            style={{ color: '#43853d' }}
+          />
+          <div
+            className="flex-none mx-2 text-stone-700"
+            style={{
+              fontFamily: 'helvetica neue,open sans,sans-serif',
+              fontWeight: 100,
+            }}
+          >
+            ex
+          </div>
+          <DiNpm className={`${iconClassName} text-red-600`} />
+          <MongoDBLogo className={iconClassName} />
+          <DiHeroku className={iconClassName} style={{ color: '#79589F' }} />
+          <MochaLogo className={iconClassName} />
+          <TravisCILogo className={iconClassName} />
+          <DiBootstrap className={iconClassName} style={{ color: '#7952b3' }} />
+          <div
+            className="flex-none mx-2 text-stone-700"
+            style={{
+              fontFamily: 'Dosis,sans-serif',
+              fontWeight: 100,
+            }}
+          >
+            Dust.js
+          </div>
+        </IconLine>
+      </SubHeading>
       <Paragraph>
         I was tired of sending a survey out and then manually entering the
         survey data into my program. I started on the Indifference Engine (
@@ -36,35 +69,6 @@ const BGV = () => {
         Mocha, test coverage in Coveralls, CI/CD on Travis CI, Bootstrap, and
         using templates in Dust.js.
       </Paragraph>
-      <IconLine>
-        <LineDate>2014-2015</LineDate>
-        <DiNodejsSmall className={iconClassName} style={{ color: '#43853d' }} />
-        <div
-          className="flex-none mx-2 text-stone-700"
-          style={{
-            fontFamily: 'helvetica neue,open sans,sans-serif',
-            fontWeight: 100,
-          }}
-        >
-          ex
-        </div>
-        <DiNpm className={iconClassName} style={{ color: '#C12127' }} />
-        <MongoDBLogo className={iconClassName} />
-        <DiHeroku className={iconClassName} style={{ color: '#79589F' }} />
-        <MochaLogo className={iconClassName} />
-        <FaStar className={iconClassName} />
-        <TravisCILogo className={iconClassName} />
-        <DiBootstrap className={iconClassName} style={{ color: '#7952b3' }} />
-        <div
-          className="flex-none mx-2 text-stone-700"
-          style={{
-            fontFamily: 'Dosis,sans-serif',
-            fontWeight: 100,
-          }}
-        >
-          Dust.js
-        </div>
-      </IconLine>
     </>
   );
 };

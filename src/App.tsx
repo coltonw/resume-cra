@@ -12,6 +12,7 @@ import PuzzleSync from './components/sections/PuzzleSync';
 import BoatsAndBridges from './components/sections/BoatsAndBridges';
 import DanyconSchedule from './components/sections/DanyconSchedule';
 import Museum from './components/sections/Museum';
+import Outro from './components/sections/Outro';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <PuzzleSync />
       <DanyconSchedule />
       <Museum />
+      <Outro />
     </div>
   );
 }

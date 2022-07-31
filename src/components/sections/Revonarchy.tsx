@@ -2,11 +2,12 @@ import React from 'react';
 import { DiBower, DiGulp, DiReact } from 'react-icons/di';
 import { FaLess } from 'react-icons/fa';
 import SectionHeading from '../SectionHeading';
+import SubHeading from '../SubHeading';
+import SubHeadingTitle from '../SubHeadingTitle';
 import Paragraph from '../Paragraph';
 import Link from '../Link';
 import EmbeddedVideo from '../EmbeddedVideo';
 import IconLine from '../IconLine';
-import LineDate from '../LineDate';
 import RevonarchyWebm from '../../media/revonarchy.webm';
 import RevonarchyMp4 from '../../media/revonarchy.mp4';
 import { ReactComponent as RamdaLogo } from '../../media/ramda-logo.svg';
@@ -17,6 +18,24 @@ const Revonarchy = () => {
   return (
     <>
       <SectionHeading>No More Voting!</SectionHeading>
+      <SubHeading>
+        <SubHeadingTitle>Revonarchy - 2015</SubHeadingTitle>
+        <IconLine>
+          <DiBower className={iconClassName} />
+          <div
+            className="flex-none mx-2 text-stone-700"
+            style={{
+              fontFamily: 'italiana,sans-serif',
+            }}
+          >
+            koa
+          </div>
+          <FaLess className={iconClassName} />
+          <DiGulp className={iconClassName} style={{ color: '#DB4446' }} />
+          <RamdaLogo className={iconClassName} />
+          <DiReact className={iconClassName} style={{ color: '#61dafb' }} />
+        </IconLine>
+      </SubHeading>
       <Paragraph>
         I got tired of my favorite games never getting picked, so I decided to
         move away from voting to let people just pick a game and then rotate who
@@ -32,22 +51,6 @@ const Revonarchy = () => {
         stuff including Bower, Koa, Less, Gulp, Ramda, and most importantly
         React.
       </Paragraph>
-      <IconLine>
-        <LineDate>2015</LineDate>
-        <DiBower className={iconClassName} />
-        <div
-          className="flex-none mx-2 text-stone-700"
-          style={{
-            fontFamily: 'italiana,sans-serif',
-          }}
-        >
-          koa
-        </div>
-        <FaLess className={iconClassName} />
-        <DiGulp className={iconClassName} style={{ color: '#DB4446' }} />
-        <RamdaLogo className={iconClassName} />
-        <DiReact className={iconClassName} style={{ color: '#61dafb' }} />
-      </IconLine>
     </>
   );
 };
