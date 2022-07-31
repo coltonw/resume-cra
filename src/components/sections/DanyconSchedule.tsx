@@ -10,14 +10,16 @@ import IconLine from '../IconLine';
 import DanyconScheduleWebm from '../../media/danyconschedule.webm';
 import DanyconScheduleMp4 from '../../media/danyconschedule.mp4';
 import { ReactComponent as BulmaLogo } from '../../media/bulma-logo.svg';
+import LineDate from '../LineDate';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
 const DanyconSchedule = () => (
   <>
     <SubHeading>
-      <SubHeadingTitle>Convention Schedule - 2022</SubHeadingTitle>
+      <SubHeadingTitle>Convention Schedule</SubHeadingTitle>
       <IconLine>
+        <LineDate>2022</LineDate>
         <SiNextdotjs className={`${iconClassName} text-stone-800`} />
         <SiVercel className={`${iconClassName} text-stone-800`} />
         <BulmaLogo className={iconClassName} />

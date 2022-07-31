@@ -16,6 +16,7 @@ import { ReactComponent as CircleCILogo } from '../../media/circleci-logo.svg';
 import { ReactComponent as NivoLogo } from '../../media/nivo-logo.svg';
 import { ReactComponent as BulmaLogo } from '../../media/bulma-logo.svg';
 import { ReactComponent as WebpackLogo } from '../../media/webpack-logo.svg';
+import LineDate from '../LineDate';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
@@ -24,8 +25,9 @@ const Judgement = () => {
     <>
       <SectionHeading>A Triumphant Return to Voting</SectionHeading>
       <SubHeading>
-        <SubHeadingTitle>Majority Judgment - 2019</SubHeadingTitle>
+        <SubHeadingTitle>Majority Judgment</SubHeadingTitle>
         <IconLine>
+          <LineDate>2019</LineDate>
           <ElixirLogo className={iconClassName} />
           <PhoenixLogo className={`${iconClassName} w-12`} />
           <CircleCILogo className={iconClassName} />

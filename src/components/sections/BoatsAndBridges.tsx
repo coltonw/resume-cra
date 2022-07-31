@@ -13,6 +13,7 @@ import BoatsAndBridgesWebm from '../../media/boatsandbridges.webm';
 import BoatsAndBridgesMp4 from '../../media/boatsandbridges.mp4';
 import { ReactComponent as WebpackLogo } from '../../media/webpack-logo.svg';
 import { ReactComponent as CSharpLogo } from '../../media/csharp-logo.svg';
+import LineDate from '../LineDate';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
@@ -20,8 +21,9 @@ const BoatsAndBridges = () => (
   <>
     <SectionHeading>Making a Real Game</SectionHeading>
     <SubHeading>
-      <SubHeadingTitle>Boats and Bridges - 2020-2021</SubHeadingTitle>
+      <SubHeadingTitle>Boats and Bridges</SubHeadingTitle>
       <IconLine>
+        <LineDate>2020-2021</LineDate>
         <DiNodejsSmall className={iconClassName} style={{ color: '#43853d' }} />
         <div className="flex-none mx-2 text-black underline decoration-blue-600 decoration-2 font-bold">
           Lo

@@ -11,6 +11,7 @@ import IconLine from '../IconLine';
 import RevonarchyWebm from '../../media/revonarchy.webm';
 import RevonarchyMp4 from '../../media/revonarchy.mp4';
 import { ReactComponent as RamdaLogo } from '../../media/ramda-logo.svg';
+import LineDate from '../LineDate';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
@@ -19,8 +20,9 @@ const Revonarchy = () => {
     <>
       <SectionHeading>No More Voting!</SectionHeading>
       <SubHeading>
-        <SubHeadingTitle>Revonarchy - 2015</SubHeadingTitle>
+        <SubHeadingTitle>Revonarchy</SubHeadingTitle>
         <IconLine>
+          <LineDate>2015</LineDate>
           <DiBower className={iconClassName} />
           <div
             className="flex-none mx-2 text-stone-700"

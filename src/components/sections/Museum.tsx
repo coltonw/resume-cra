@@ -6,6 +6,7 @@ import SubHeadingTitle from '../SubHeadingTitle';
 import Paragraph from '../Paragraph';
 import IconLine from '../IconLine';
 import { ReactComponent as CRALogo } from '../../media/cra-logo.svg';
+import LineDate from '../LineDate';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
@@ -13,8 +14,9 @@ const Museum = () => (
   <>
     <SectionHeading>The museum is its own exhibit</SectionHeading>
     <SubHeading>
-      <SubHeadingTitle>Create React App - 2020-2022</SubHeadingTitle>
+      <SubHeadingTitle>Create React App</SubHeadingTitle>
       <IconLine>
+        <LineDate>2020-2022</LineDate>
         <CRALogo className={iconClassName} />
         <SiTailwindcss className={`${iconClassName} text-sky-400`} />
       </IconLine>

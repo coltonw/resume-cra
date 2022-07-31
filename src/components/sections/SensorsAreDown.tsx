@@ -10,6 +10,7 @@ import sensorsaredownAudio from '../../media/sensorsaredown.mp3';
 import { ReactComponent as AlexaLogo } from '../../media/alexa-logo.svg';
 import { ReactComponent as ServerlessLogo } from '../../media/serverless-logo.svg';
 import { ReactComponent as FlowLogo } from '../../media/flow-logo.svg';
+import LineDate from '../LineDate';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
@@ -18,8 +19,9 @@ const SensorsAreDown = () => {
     <>
       <SectionHeading>Gaming Side Projects</SectionHeading>
       <SubHeading>
-        <SubHeadingTitle>Sensors Are Down - 2017</SubHeadingTitle>
+        <SubHeadingTitle>Sensors Are Down</SubHeadingTitle>
         <IconLine>
+          <LineDate>2017</LineDate>
           <AlexaLogo className={iconClassName} />
           <FaAws className={iconClassName} />
           <ServerlessLogo className={iconClassName} />

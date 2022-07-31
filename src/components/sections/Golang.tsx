@@ -8,13 +8,15 @@ import EmbeddedVideo from '../EmbeddedVideo';
 import IconLine from '../IconLine';
 import GoWebm from '../../media/godemo3.webm';
 import GoMp4 from '../../media/godemo3.mp4';
+import LineDate from '../LineDate';
 
 const Golang = () => {
   return (
     <>
       <SubHeading>
-        <SubHeadingTitle>Go Vote Tally - 2013-2014</SubHeadingTitle>
+        <SubHeadingTitle>Go Vote Tally</SubHeadingTitle>
         <IconLine>
+          <LineDate>2013-2014</LineDate>
           <DiGo className="flex-none block w-8 h-8 mx-4" />
         </IconLine>
       </SubHeading>

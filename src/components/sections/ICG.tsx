@@ -13,6 +13,7 @@ import { ReactComponent as ScalaJSLogo } from '../../media/scala-js-logo.svg';
 import { ReactComponent as CSharpLogo } from '../../media/csharp-logo.svg';
 import { ReactComponent as PythonLogo } from '../../media/python-logo.svg';
 import { ReactComponent as ServerlessLogo } from '../../media/serverless-logo.svg';
+import LineDate from '../LineDate';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
@@ -20,8 +21,9 @@ const ICG = () => (
   <>
     <SectionHeading>Instantaneous Card Game</SectionHeading>
     <SubHeading>
-      <SubHeadingTitle>Scala.js - 2018</SubHeadingTitle>
+      <SubHeadingTitle>Scala.js</SubHeadingTitle>
       <IconLine>
+        <LineDate>2018</LineDate>
         <ScalaJSLogo className={iconClassName} />
       </IconLine>
     </SubHeading>
@@ -39,8 +41,9 @@ const ICG = () => (
       tooling and few tutorials which were all broken and out of date.
     </Paragraph>
     <SubHeading>
-      <SubHeadingTitle>Unity - 2019</SubHeadingTitle>
+      <SubHeadingTitle>Unity</SubHeadingTitle>
       <IconLine>
+        <LineDate>2019</LineDate>
         <FaUnity className={iconClassName} />
         <CSharpLogo className={iconClassName} />
         <PythonLogo className={iconClassName} />

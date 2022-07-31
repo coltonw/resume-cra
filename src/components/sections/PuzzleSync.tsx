@@ -13,6 +13,7 @@ import PuzzleSyncWebm from '../../media/puzzlesync.webm';
 import PuzzleSyncMp4 from '../../media/puzzlesync.mp4';
 import { ReactComponent as CircleCILogo } from '../../media/circleci-logo.svg';
 import { ReactComponent as ServerlessLogo } from '../../media/serverless-logo.svg';
+import LineDate from '../LineDate';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
@@ -20,8 +21,9 @@ const PuzzleSync = () => (
   <>
     <SectionHeading>Fun with Family</SectionHeading>
     <SubHeading>
-      <SubHeadingTitle>PuzzleSync - 2020</SubHeadingTitle>
+      <SubHeadingTitle>PuzzleSync</SubHeadingTitle>
       <IconLine>
+        <LineDate>2020</LineDate>
         <SiGatsby className={`${iconClassName} text-purple-700`} />
         <DiReact className={iconClassName} style={{ color: '#61dafb' }} />
         <SiGraphql className={`${iconClassName} text-pink-600`} />

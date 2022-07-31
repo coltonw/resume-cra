@@ -10,6 +10,7 @@ import BGVScreenshot from '../../media/bgv.png';
 import { ReactComponent as TravisCILogo } from '../../media/travisci-logo.svg';
 import { ReactComponent as MochaLogo } from '../../media/mocha.svg';
 import { ReactComponent as MongoDBLogo } from '../../media/mongodb-logo.svg';
+import LineDate from '../LineDate';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
@@ -17,8 +18,9 @@ const BGV = () => {
   return (
     <>
       <SubHeading>
-        <SubHeadingTitle>Indifference Engine - 2014-2015</SubHeadingTitle>
+        <SubHeadingTitle>Indifference Engine</SubHeadingTitle>
         <IconLine>
+          <LineDate>2014-2015</LineDate>
           <DiNodejsSmall
             className={iconClassName}
             style={{ color: '#43853d' }}
