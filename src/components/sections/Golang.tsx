@@ -6,9 +6,10 @@ import Paragraph from '../Paragraph';
 import Link from '../Link';
 import EmbeddedVideo from '../EmbeddedVideo';
 import IconLine from '../IconLine';
+import LineDate from '../LineDate';
+import LineIcon from '../LineIcon';
 import GoWebm from '../../media/godemo3.webm';
 import GoMp4 from '../../media/godemo3.mp4';
-import LineDate from '../LineDate';
 
 const Golang = () => {
   return (
@@ -17,7 +18,9 @@ const Golang = () => {
         <SubHeadingTitle>Go Vote Tally</SubHeadingTitle>
         <IconLine>
           <LineDate>2013-2014</LineDate>
-          <DiGo className="flex-none block w-8 h-8 mx-4" />
+          <LineIcon title="Go" href="https://go.dev/">
+            <DiGo className="flex-none block w-8 h-8 mx-4" />
+          </LineIcon>
         </IconLine>
       </SubHeading>
       <Paragraph>

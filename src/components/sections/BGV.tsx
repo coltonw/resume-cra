@@ -6,11 +6,12 @@ import Paragraph from '../Paragraph';
 import Link from '../Link';
 import EmbeddedImage from '../EmbeddedImage';
 import IconLine from '../IconLine';
+import LineDate from '../LineDate';
+import LineIcon from '../LineIcon';
 import BGVScreenshot from '../../media/bgv.png';
 import { ReactComponent as TravisCILogo } from '../../media/travisci-logo.svg';
 import { ReactComponent as MochaLogo } from '../../media/mocha.svg';
 import { ReactComponent as MongoDBLogo } from '../../media/mongodb-logo.svg';
-import LineDate from '../LineDate';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
@@ -21,34 +22,55 @@ const BGV = () => {
         <SubHeadingTitle>Indifference Engine</SubHeadingTitle>
         <IconLine>
           <LineDate>2014-2015</LineDate>
-          <DiNodejsSmall
-            className={iconClassName}
-            style={{ color: '#43853d' }}
-          />
-          <div
-            className="flex-none mx-2 text-stone-700"
-            style={{
-              fontFamily: 'helvetica neue,open sans,sans-serif',
-              fontWeight: 100,
-            }}
-          >
-            ex
-          </div>
-          <DiNpm className={`${iconClassName} text-red-600`} />
-          <MongoDBLogo className={iconClassName} />
-          <DiHeroku className={iconClassName} style={{ color: '#79589F' }} />
-          <MochaLogo className={iconClassName} />
-          <TravisCILogo className={iconClassName} />
-          <DiBootstrap className={iconClassName} style={{ color: '#7952b3' }} />
-          <div
-            className="flex-none mx-2 text-stone-700"
-            style={{
-              fontFamily: 'Dosis,sans-serif',
-              fontWeight: 100,
-            }}
-          >
-            Dust.js
-          </div>
+          <LineIcon title="Node.js" href="https://nodejs.org/en/">
+            <DiNodejsSmall
+              className={iconClassName}
+              style={{ color: '#43853d' }}
+            />
+          </LineIcon>
+          <LineIcon title="Express" href="https://expressjs.com/">
+            <div
+              className="flex-none mx-2 text-stone-700"
+              style={{
+                fontFamily: 'helvetica neue,open sans,sans-serif',
+                fontWeight: 100,
+              }}
+            >
+              ex
+            </div>
+          </LineIcon>
+          <LineIcon title="npm" href="https://www.npmjs.com/">
+            <DiNpm className={`${iconClassName} text-red-600`} />
+          </LineIcon>
+          <LineIcon title="MongoDB" href="https://www.mongodb.com/">
+            <MongoDBLogo className={iconClassName} />
+          </LineIcon>
+          <LineIcon title="Heroku" href="https://www.heroku.com/">
+            <DiHeroku className={iconClassName} style={{ color: '#79589F' }} />
+          </LineIcon>
+          <LineIcon title="Mocha" href="https://mochajs.org/">
+            <MochaLogo className={iconClassName} />
+          </LineIcon>
+          <LineIcon title="Travis CI" href="https://www.travis-ci.com/">
+            <TravisCILogo className={iconClassName} />
+          </LineIcon>
+          <LineIcon title="Bootstrap" href="https://getbootstrap.com/">
+            <DiBootstrap
+              className={iconClassName}
+              style={{ color: '#7952b3' }}
+            />
+          </LineIcon>
+          <LineIcon title="Dust.js" href="https://www.dustjs.com/">
+            <div
+              className="flex-none mx-2 text-stone-700"
+              style={{
+                fontFamily: 'Dosis,sans-serif',
+                fontWeight: 100,
+              }}
+            >
+              Dust.js
+            </div>
+          </LineIcon>
         </IconLine>
       </SubHeading>
       <Paragraph>

@@ -7,6 +7,7 @@ import Paragraph from '../Paragraph';
 import IconLine from '../IconLine';
 import { ReactComponent as CRALogo } from '../../media/cra-logo.svg';
 import LineDate from '../LineDate';
+import LineIcon from '../LineIcon';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
@@ -17,8 +18,15 @@ const Museum = () => (
       <SubHeadingTitle>Create React App</SubHeadingTitle>
       <IconLine>
         <LineDate>2020-2022</LineDate>
-        <CRALogo className={iconClassName} />
-        <SiTailwindcss className={`${iconClassName} text-sky-400`} />
+        <LineIcon title="Create React App" href="https://create-react-app.dev/">
+          <CRALogo className={iconClassName} />
+        </LineIcon>
+        <LineIcon title="tailwindcss" href="https://tailwindcss.com/">
+          <SiTailwindcss
+            title="tailwindcss"
+            className={`${iconClassName} text-sky-400`}
+          />
+        </LineIcon>
       </IconLine>
     </SubHeading>
     <Paragraph>

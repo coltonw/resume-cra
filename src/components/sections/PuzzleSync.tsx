@@ -1,7 +1,7 @@
 import React from 'react';
 import { DiReact } from 'react-icons/di';
 import { FaAws } from 'react-icons/fa';
-import { SiGatsby, SiAuth0, SiGraphql } from 'react-icons/si';
+import { SiGatsby, SiAuth0, SiGraphql, SiTypescript } from 'react-icons/si';
 import SectionHeading from '../SectionHeading';
 import SubHeading from '../SubHeading';
 import SubHeadingTitle from '../SubHeadingTitle';
@@ -14,6 +14,7 @@ import PuzzleSyncMp4 from '../../media/puzzlesync.mp4';
 import { ReactComponent as CircleCILogo } from '../../media/circleci-logo.svg';
 import { ReactComponent as ServerlessLogo } from '../../media/serverless-logo.svg';
 import LineDate from '../LineDate';
+import LineIcon from '../LineIcon';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
@@ -24,13 +25,45 @@ const PuzzleSync = () => (
       <SubHeadingTitle>PuzzleSync</SubHeadingTitle>
       <IconLine>
         <LineDate>2020</LineDate>
-        <SiGatsby className={`${iconClassName} text-purple-700`} />
-        <DiReact className={iconClassName} style={{ color: '#61dafb' }} />
-        <SiGraphql className={`${iconClassName} text-pink-600`} />
-        <SiAuth0 className={`${iconClassName} text-orange-600`} />
-        <CircleCILogo className={iconClassName} />
-        <FaAws className={iconClassName} />
-        <ServerlessLogo className={iconClassName} />
+        <LineIcon title="Gatsby" href="https://www.gatsbyjs.com/">
+          <SiGatsby
+            title="Gatsby"
+            className={`${iconClassName} text-purple-700`}
+          />
+        </LineIcon>
+        <LineIcon title="React" href="https://reactjs.org/">
+          <DiReact className={iconClassName} style={{ color: '#61dafb' }} />
+        </LineIcon>
+        <LineIcon title="TypeScript" href="https://www.typescriptlang.org/">
+          <SiTypescript
+            title="TypeScript"
+            className={`${iconClassName} text-blue-500`}
+          />
+        </LineIcon>
+        <LineIcon title="GraphQL" href="https://graphql.org/">
+          <SiGraphql
+            title="GraphQL"
+            className={`${iconClassName} text-pink-600`}
+          />
+        </LineIcon>
+        <LineIcon title="auth0" href="https://auth0.com/">
+          <SiAuth0
+            title="auth0"
+            className={`${iconClassName} text-orange-600`}
+          />
+        </LineIcon>
+        <LineIcon title="circleci" href="https://circleci.com/">
+          <CircleCILogo className={iconClassName} />
+        </LineIcon>
+        <LineIcon title="Amazon Web Services" href="https://aws.amazon.com/">
+          <FaAws className={iconClassName} />
+        </LineIcon>
+        <LineIcon
+          title="Serverless Framework"
+          href="https://www.serverless.com/"
+        >
+          <ServerlessLogo className={iconClassName} />
+        </LineIcon>
       </IconLine>
     </SubHeading>
     <Paragraph>
@@ -46,9 +79,10 @@ const PuzzleSync = () => (
     <EmbeddedVideo webm={PuzzleSyncWebm} mp4={PuzzleSyncMp4} />
     <Paragraph>
       It was my first time using any sort of react based static site generator.
-      I found Gatsby to be to annoying to use especially their GraphQL internal
-      api. I deployed the frontend using CircleCI for CI/CD and Amazon S3 to
-      host. I learned Auth0 for authentication and authorization.
+      I found Gatsby to be annoying to use especially their GraphQL internal
+      api. This also was my first side project coded in TypeScript. I deployed
+      the frontend using CircleCI for CI/CD and Amazon S3 to host. I learned
+      Auth0 for authentication and authorization.
     </Paragraph>
     <Paragraph>
       I used an aws official sample for a chat app as the foundation for my

@@ -7,13 +7,14 @@ import Paragraph from '../Paragraph';
 import Link from '../Link';
 import EmbeddedVideo from '../EmbeddedVideo';
 import IconLine from '../IconLine';
+import LineDate from '../LineDate';
+import LineIcon from '../LineIcon';
 import IcgWebm from '../../media/icg.webm';
 import IcgMp4 from '../../media/icg.mp4';
 import { ReactComponent as ScalaJSLogo } from '../../media/scala-js-logo.svg';
 import { ReactComponent as CSharpLogo } from '../../media/csharp-logo.svg';
 import { ReactComponent as PythonLogo } from '../../media/python-logo.svg';
 import { ReactComponent as ServerlessLogo } from '../../media/serverless-logo.svg';
-import LineDate from '../LineDate';
 
 const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
@@ -24,7 +25,9 @@ const ICG = () => (
       <SubHeadingTitle>Scala.js</SubHeadingTitle>
       <IconLine>
         <LineDate>2018</LineDate>
-        <ScalaJSLogo className={iconClassName} />
+        <LineIcon title="Scala.js" href="https://www.scala-js.org/">
+          <ScalaJSLogo className={iconClassName} />
+        </LineIcon>
       </IconLine>
     </SubHeading>
     <Paragraph>
@@ -44,11 +47,27 @@ const ICG = () => (
       <SubHeadingTitle>Unity</SubHeadingTitle>
       <IconLine>
         <LineDate>2019</LineDate>
-        <FaUnity className={iconClassName} />
-        <CSharpLogo className={iconClassName} />
-        <PythonLogo className={iconClassName} />
-        <FaAws className={iconClassName} />
-        <ServerlessLogo className={iconClassName} />
+        <LineIcon title="Unity" href="https://unity.com/">
+          <FaUnity className={iconClassName} />
+        </LineIcon>
+        <LineIcon
+          title="C#"
+          href="https://docs.microsoft.com/en-us/dotnet/csharp/"
+        >
+          <CSharpLogo className={iconClassName} />
+        </LineIcon>
+        <LineIcon title="python" href="https://www.python.org/">
+          <PythonLogo className={iconClassName} />
+        </LineIcon>
+        <LineIcon title="Amazon Web Services" href="https://aws.amazon.com/">
+          <FaAws className={iconClassName} />
+        </LineIcon>
+        <LineIcon
+          title="Serverless Framework"
+          href="https://www.serverless.com/"
+        >
+          <ServerlessLogo className={iconClassName} />
+        </LineIcon>
       </IconLine>
     </SubHeading>
     <Paragraph>
