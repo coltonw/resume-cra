@@ -21,9 +21,9 @@ const Museum = () => (
         <LineIcon title="Create React App" href="https://create-react-app.dev/">
           <CRALogo className={iconClassName} />
         </LineIcon>
-        <LineIcon title="tailwindcss" href="https://tailwindcss.com/">
+        <LineIcon title="Tailwind CSS" href="https://tailwindcss.com/">
           <SiTailwindcss
-            title="tailwindcss"
+            title="Tailwind CSS"
             className={`${iconClassName} text-sky-400`}
           />
         </LineIcon>

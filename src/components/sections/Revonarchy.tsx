@@ -27,7 +27,7 @@ const Revonarchy = () => {
           <LineIcon title="Bower" href="https://bower.io/">
             <DiBower className={iconClassName} />
           </LineIcon>
-          <LineIcon title="koa" href="https://koajs.com/">
+          <LineIcon title="Koa" href="https://koajs.com/">
             <div
               className="flex-none mx-2 text-stone-700"
               style={{

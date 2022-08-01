@@ -38,7 +38,7 @@ const SensorsAreDown = () => {
           >
             <ServerlessLogo className={iconClassName} />
           </LineIcon>
-          <LineIcon title="flow" href="https://flow.org/">
+          <LineIcon title="Flow" href="https://flow.org/">
             <FlowLogo className={iconClassName} />
           </LineIcon>
         </IconLine>

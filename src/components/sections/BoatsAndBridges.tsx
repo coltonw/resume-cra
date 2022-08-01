@@ -42,7 +42,7 @@ const BoatsAndBridges = () => (
             className={`${iconClassName} text-yellow-600`}
           />
         </LineIcon>
-        <LineIcon title="webpack" href="https://webpack.js.org/">
+        <LineIcon title="Webpack" href="https://webpack.js.org/">
           <WebpackLogo className={iconClassName} />
         </LineIcon>
         <LineIcon title="Unity" href="https://unity.com/">

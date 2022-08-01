@@ -38,7 +38,7 @@ const Judgement = () => {
           >
             <PhoenixLogo className={`${iconClassName} w-12`} />
           </LineIcon>
-          <LineIcon title="circleci" href="https://circleci.com/">
+          <LineIcon title="CircleCI" href="https://circleci.com/">
             <CircleCILogo className={iconClassName} />
           </LineIcon>
           <LineIcon title="Amazon Web Services" href="https://aws.amazon.com/">
@@ -53,7 +53,7 @@ const Judgement = () => {
           <LineIcon title="Bulma" href="https://bulma.io/">
             <BulmaLogo className={iconClassName} />
           </LineIcon>
-          <LineIcon title="webpack" href="https://webpack.js.org/">
+          <LineIcon title="Webpack" href="https://webpack.js.org/">
             <WebpackLogo className={iconClassName} />
           </LineIcon>
         </IconLine>

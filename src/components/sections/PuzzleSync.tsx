@@ -46,13 +46,13 @@ const PuzzleSync = () => (
             className={`${iconClassName} text-pink-600`}
           />
         </LineIcon>
-        <LineIcon title="auth0" href="https://auth0.com/">
+        <LineIcon title="Auth0" href="https://auth0.com/">
           <SiAuth0
-            title="auth0"
+            title="Auth0"
             className={`${iconClassName} text-orange-600`}
           />
         </LineIcon>
-        <LineIcon title="circleci" href="https://circleci.com/">
+        <LineIcon title="CircleCI" href="https://circleci.com/">
           <CircleCILogo className={iconClassName} />
         </LineIcon>
         <LineIcon title="Amazon Web Services" href="https://aws.amazon.com/">
@@ -80,9 +80,9 @@ const PuzzleSync = () => (
     <Paragraph>
       It was my first time using any sort of react based static site generator.
       I found Gatsby to be annoying to use especially their GraphQL internal
-      api. This also was my first side project coded in TypeScript. I deployed
-      the frontend using CircleCI for CI/CD and Amazon S3 to host. I learned
-      Auth0 for authentication and authorization.
+      api. I switched from JavaScript to TypeScript starting with this project.
+      I deployed the frontend using CircleCI for CI/CD and Amazon S3 to host. I
+      learned Auth0 for authentication and authorization.
     </Paragraph>
     <Paragraph>
       I used an aws official sample for a chat app as the foundation for my
