@@ -5,7 +5,7 @@ interface EmbeddedImageProps {
   alt: string;
 }
 
-const EmbeddedImage: React.FC<EmbeddedImageProps> = ({ src, alt }) => {
+const EmbeddedImage = ({ src, alt }: EmbeddedImageProps) => {
   return <img src={src} className="border-2 border-stone-200 my-6" alt={alt} />;
 };
 

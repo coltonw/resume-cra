@@ -1,35 +1,17 @@
 import React from 'react';
-import { FaAws, FaUnity } from 'react-icons/fa';
 import SectionHeading from '../SectionHeading';
-import SubHeading from '../SubHeading';
-import SubHeadingTitle from '../SubHeadingTitle';
 import Paragraph from '../Paragraph';
 import Link from '../Link';
 import EmbeddedVideo from '../EmbeddedVideo';
-import IconLine from '../IconLine';
-import LineDate from '../LineDate';
-import LineIcon from '../LineIcon';
+import IcgScalaJsLine from '../iconLines/IcgScalaJsLine';
+import IcgUnityLine from '../iconLines/IcgUnityLine';
 import IcgWebm from '../../media/icg.webm';
 import IcgMp4 from '../../media/icg.mp4';
-import { ReactComponent as ScalaJSLogo } from '../../media/scala-js-logo.svg';
-import { ReactComponent as CSharpLogo } from '../../media/csharp-logo.svg';
-import { ReactComponent as PythonLogo } from '../../media/python-logo.svg';
-import { ReactComponent as ServerlessLogo } from '../../media/serverless-logo.svg';
-
-const iconClassName = 'flex-none w-8 h-8 mx-2 text-stone-700 fill-current';
 
 const ICG = () => (
   <>
     <SectionHeading>Instantaneous Card Game</SectionHeading>
-    <SubHeading>
-      <SubHeadingTitle>Scala.js</SubHeadingTitle>
-      <IconLine>
-        <LineDate>2018</LineDate>
-        <LineIcon title="Scala.js" href="https://www.scala-js.org/">
-          <ScalaJSLogo className={iconClassName} />
-        </LineIcon>
-      </IconLine>
-    </SubHeading>
+    <IcgScalaJsLine />
     <Paragraph>
       I love card games. I could write about that topic alone forever but
       suffice it to say, I had an idea for a collectible card game where you
@@ -43,33 +25,7 @@ const ICG = () => (
       because the Scala.js ecosystem was incredibly barren with lackluster
       tooling and few tutorials which were all broken and out of date.
     </Paragraph>
-    <SubHeading>
-      <SubHeadingTitle>Unity</SubHeadingTitle>
-      <IconLine>
-        <LineDate>2019</LineDate>
-        <LineIcon title="Unity" href="https://unity.com/">
-          <FaUnity className={iconClassName} />
-        </LineIcon>
-        <LineIcon
-          title="C#"
-          href="https://docs.microsoft.com/en-us/dotnet/csharp/"
-        >
-          <CSharpLogo className={iconClassName} />
-        </LineIcon>
-        <LineIcon title="python" href="https://www.python.org/">
-          <PythonLogo className={iconClassName} />
-        </LineIcon>
-        <LineIcon title="Amazon Web Services" href="https://aws.amazon.com/">
-          <FaAws className={iconClassName} />
-        </LineIcon>
-        <LineIcon
-          title="Serverless Framework"
-          href="https://www.serverless.com/"
-        >
-          <ServerlessLogo className={iconClassName} />
-        </LineIcon>
-      </IconLine>
-    </SubHeading>
+    <IcgUnityLine />
     <Paragraph>
       Over the holidays that year I discussed the idea with my brother and it
       was rekindled. Conveniently, I got a Humble Bundle with a bunch of card

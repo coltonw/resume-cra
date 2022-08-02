@@ -49,7 +49,7 @@ const isVideoVisible = (
   }, 0);
 };
 
-const EmbeddedVideo: React.FC<EmbeddedVideoProps> = ({ webm, mp4 }) => {
+const EmbeddedVideo = ({ webm, mp4 }: EmbeddedVideoProps) => {
   const videoRef: React.Ref<HTMLVideoElement> = useRef(null);
   const [playing, setPlaying] = useState(false);
   const [played, setPlayed] = useState(false);

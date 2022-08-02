@@ -7,14 +7,16 @@ const Header = () => {
     <header className="flex justify-between items-center px-4 py-3 mb-12 text-base">
       <div className="flex items-center justify-between p-0">
         <div>
-          <img
-            className="h-8 inline align-middle"
-            src={logo}
-            alt="Will Colton Logo"
-          />
-          <span className="align-middle hidden sm:inline pl-2 text-l font-black">
-            Will Colton's Side Project Museum
-          </span>
+          <a href="/">
+            <img
+              className="h-8 inline align-middle"
+              src={logo}
+              alt="Will Colton Logo"
+            />
+            <span className="align-middle hidden sm:inline pl-2 text-l font-black">
+              Will Colton's Side Project Museum
+            </span>
+          </a>
         </div>
       </div>
       <nav className={`flex p-0`}>

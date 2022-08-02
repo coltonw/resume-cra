@@ -1,28 +1,15 @@
 import React from 'react';
-import { DiGo } from 'react-icons/di';
-import SubHeading from '../SubHeading';
-import SubHeadingTitle from '../SubHeadingTitle';
 import Paragraph from '../Paragraph';
 import Link from '../Link';
 import EmbeddedVideo from '../EmbeddedVideo';
-import IconLine from '../IconLine';
-import LineDate from '../LineDate';
-import LineIcon from '../LineIcon';
 import GoWebm from '../../media/godemo3.webm';
 import GoMp4 from '../../media/godemo3.mp4';
+import GolangLine from '../iconLines/GolangLine';
 
 const Golang = () => {
   return (
     <>
-      <SubHeading>
-        <SubHeadingTitle>Go Vote Tally</SubHeadingTitle>
-        <IconLine>
-          <LineDate>2013-2014</LineDate>
-          <LineIcon title="Go" href="https://go.dev/">
-            <DiGo className="flex-none block w-8 h-8 mx-4" />
-          </LineIcon>
-        </IconLine>
-      </SubHeading>
+      <GolangLine />
       <Paragraph>
         All of my side projects are partially rooted in learning something new.
         At the time, I was learning Go and so I wrote a few different voting

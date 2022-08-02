@@ -1,10 +1,17 @@
 import React from 'react';
 
-const Link: React.FC<{ href: string; children: React.ReactNode }> = ({
-  href,
-  children,
-}) => (
-  <a href={href} className="text-stone-600 font-bold hover:underline">
+interface LinkProps {
+  href?: string;
+  onClick?: () => void;
+  children: React.ReactNode;
+}
+
+const Link = ({ href, onClick, children }: LinkProps) => (
+  <a
+    href={href}
+    onClick={onClick}
+    className="text-stone-600 font-bold hover:underline cursor-pointer"
+  >
     {children}
   </a>
 );
