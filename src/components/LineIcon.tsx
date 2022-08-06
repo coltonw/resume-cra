@@ -6,7 +6,7 @@ interface LineIconProps {
   children: React.ReactNode;
 }
 
-const Golang = ({ title, href, children }: LineIconProps) => {
+const LineIcon = ({ title, href, children }: LineIconProps) => {
   return (
     <a title={title} href={href}>
       {children}
@@ -14,4 +14,4 @@ const Golang = ({ title, href, children }: LineIconProps) => {
   );
 };
 
-export default Golang;
+export default LineIcon;

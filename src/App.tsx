@@ -33,9 +33,19 @@ function App() {
     setShowingTldr(true);
   };
 
+  const goHome = (event: React.MouseEvent) => {
+    // If they are already home, we want this behave like a normal link and it will just refresh the page in that case.
+    // Otherwise we want to prevent default and do an SPA internal state change to go home.
+    if (window.location.pathname + window.location.search !== '/') {
+      event.preventDefault();
+      window.history.pushState('', '', '/');
+      setShowingTldr(false);
+    }
+  };
+
   return (
     <div className="container max-w-screen-md mx-auto text-lg font-sans p-2">
-      <Header />
+      <Header goHome={goHome} />
       <Intro />
       {showingTldr ? (
         <Tldr />

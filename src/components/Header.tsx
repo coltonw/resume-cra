@@ -2,12 +2,16 @@ import React from 'react';
 import { DiGithubBadge } from 'react-icons/di';
 import logo from '../logo.svg';
 
-const Header = () => {
+interface HeaderProps {
+  goHome: (event: React.MouseEvent) => void;
+}
+
+const Header = ({ goHome }: HeaderProps) => {
   return (
     <header className="flex justify-between items-center px-4 py-3 mb-12 text-base">
       <div className="flex items-center justify-between p-0">
         <div>
-          <a href="/">
+          <a href="/" onClick={goHome}>
             <img
               className="h-8 inline align-middle"
               src={logo}
