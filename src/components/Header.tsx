@@ -16,6 +16,8 @@ const Header = ({ goHome }: HeaderProps) => {
               className="h-8 inline align-middle"
               src={logo}
               alt="Will Colton Logo"
+              width={32}
+              height={32}
             />
             <span className="align-middle hidden sm:inline pl-2 text-l font-black">
               Will Colton's Side Project Museum

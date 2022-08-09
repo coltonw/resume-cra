@@ -65,7 +65,7 @@ const EmbeddedVideo = ({ webm, mp4 }: EmbeddedVideoProps) => {
     window.addEventListener('resize', throttledIsVideoVisible);
 
     return () => {
-      window.removeEventListener('scorll', throttledIsVideoVisible);
+      window.removeEventListener('scroll', throttledIsVideoVisible);
       window.removeEventListener('resize', throttledIsVideoVisible);
     };
   }, []);
@@ -95,7 +95,7 @@ const EmbeddedVideo = ({ webm, mp4 }: EmbeddedVideoProps) => {
   return (
     <div className="relative my-6 border-2 border-stone-200">
       {!playing && played && (
-        <FaRedoAlt className="absolute inset-0 m-auto w-16 h-16 bg-stone-100 p-2 rounded-lg text-stone-800" />
+        <FaRedoAlt className="absolute inset-0 m-auto w-16 h-16 bg-stone-100 p-2 rounded-lg text-stone-800 cursor-pointer" />
       )}
       <video
         ref={videoRef}
