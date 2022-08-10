@@ -31,7 +31,12 @@ const BoatsAndBridges = () => (
       </Link>
       ).
     </Paragraph>
-    <EmbeddedVideo webm={BoatsAndBridgesWebm} mp4={BoatsAndBridgesMp4} />
+    <EmbeddedVideo
+      webm={BoatsAndBridgesWebm}
+      mp4={BoatsAndBridgesMp4}
+      width={1258}
+      height={978}
+    />
     <Paragraph>
       I spent a lot of time on a 3D Unity implementation of the game but every
       time I developed new visuals they would either not look how I wanted or

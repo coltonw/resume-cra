@@ -25,8 +25,8 @@ const BGV = () => {
       <EmbeddedImage
         src={BGVScreenshot}
         alt="Indifference Engine Screenshot"
-        width={752}
-        height={557}
+        width={748}
+        height={556}
       />
       <Paragraph>
         I spent quite a bit more time on this project and learned about Node.js,

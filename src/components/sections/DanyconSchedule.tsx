@@ -18,7 +18,12 @@ const DanyconSchedule = () => (
       username Will and give it a few minutes for vercel to start the server
       before refreshing and logging in).
     </Paragraph>
-    <EmbeddedVideo webm={DanyconScheduleWebm} mp4={DanyconScheduleMp4} />
+    <EmbeddedVideo
+      webm={DanyconScheduleWebm}
+      mp4={DanyconScheduleMp4}
+      width={1080}
+      height={868}
+    />
     <Paragraph>
       I had the pleasure of building this site using Next.js and deploying using
       Vercel. It made my life really easy and I definitely want to work with

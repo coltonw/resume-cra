@@ -21,7 +21,12 @@ const PuzzleSync = () => (
       </Link>
       ; frontend has private source and implementation).
     </Paragraph>
-    <EmbeddedVideo webm={PuzzleSyncWebm} mp4={PuzzleSyncMp4} />
+    <EmbeddedVideo
+      webm={PuzzleSyncWebm}
+      mp4={PuzzleSyncMp4}
+      width={1194}
+      height={790}
+    />
     <Paragraph>
       It was my first time using any sort of react based static site generator.
       I found Gatsby to be annoying to use especially their GraphQL internal

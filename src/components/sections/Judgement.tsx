@@ -23,7 +23,12 @@ const Judgement = () => {
         <Link href="https://github.com/coltonw/majudge">source</Link>; site no
         longer deployed).
       </Paragraph>
-      <EmbeddedVideo webm={JudgementWebm} mp4={JudgementMp4} />
+      <EmbeddedVideo
+        webm={JudgementWebm}
+        mp4={JudgementMp4}
+        width={1030}
+        height={810}
+      />
       <Paragraph>
         After learning a lot of frontend work in my day job, this project became
         focused on learning more backend and devops. I used Elixir's Phoenix

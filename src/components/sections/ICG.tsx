@@ -35,7 +35,7 @@ const ICG = () => (
       </Link>
       ; game not released).
     </Paragraph>
-    <EmbeddedVideo webm={IcgWebm} mp4={IcgMp4} />
+    <EmbeddedVideo webm={IcgWebm} mp4={IcgMp4} width={960} height={600} />
     <Paragraph>
       The game client was coded in C# and built with Unity. The backend was
       coded in Python deployed to AWS Lambda with the Serverless Framework.

@@ -21,7 +21,12 @@ const Revonarchy = () => {
         <Link href="https://github.com/coltonw/revonarchy">Source</Link>; site
         was never deployed)
       </Paragraph>
-      <EmbeddedVideo webm={RevonarchyWebm} mp4={RevonarchyMp4} />
+      <EmbeddedVideo
+        webm={RevonarchyWebm}
+        mp4={RevonarchyMp4}
+        width={922}
+        height={580}
+      />
       <Paragraph>
         Revonarchy was relatively short lived but I still learned some great
         stuff including Bower, Koa, Less, Gulp, Ramda, and most importantly

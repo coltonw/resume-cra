@@ -7,6 +7,7 @@ interface EmbeddedImageProps {
   height: number;
 }
 
+// target width for media is 748 because that is the width they will be on a computer monitor
 const EmbeddedImage = ({ src, alt, width, height }: EmbeddedImageProps) => {
   return (
     <img

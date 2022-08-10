@@ -2,8 +2,8 @@ import React from 'react';
 import Paragraph from '../Paragraph';
 import Link from '../Link';
 import EmbeddedVideo from '../EmbeddedVideo';
-import GoWebm from '../../media/godemo3.webm';
-import GoMp4 from '../../media/godemo3.mp4';
+import GoWebm from '../../media/godemo.webm';
+import GoMp4 from '../../media/godemo.mp4';
 import GolangLine from '../iconLines/GolangLine';
 
 const Golang = () => {
@@ -22,7 +22,7 @@ const Golang = () => {
         and then eventually landed on a (highly questionable){' '}
         <Link href="https://play.golang.org/p/KG0KlWWbNFc">blend of both</Link>.
       </Paragraph>
-      <EmbeddedVideo webm={GoWebm} mp4={GoMp4} />
+      <EmbeddedVideo webm={GoWebm} mp4={GoMp4} width={748} height={450} />
     </>
   );
 };
