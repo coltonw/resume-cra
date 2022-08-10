@@ -2,7 +2,7 @@ import React from 'react';
 
 interface LinkProps {
   href?: string;
-  onClick?: () => void;
+  onClick?: (event: React.MouseEvent) => void;
   children: React.ReactNode;
 }
 

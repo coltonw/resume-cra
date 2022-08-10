@@ -28,7 +28,8 @@ function App() {
     });
   });
 
-  const showTldr = () => {
+  const showTldr = (event: React.MouseEvent) => {
+    event.preventDefault();
     window.history.pushState('', '', '/?tldr');
     setShowingTldr(true);
   };
@@ -52,7 +53,9 @@ function App() {
       ) : (
         <>
           <div>
-            <Link onClick={showTldr}>TL;DR</Link>
+            <Link onClick={showTldr} href="/?tldr">
+              TL;DR
+            </Link>
           </div>
           <VotingIntro />
           <Golang />
