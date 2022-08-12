@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiTailwindcss } from 'react-icons/si';
+import { SiNetlify, SiTailwindcss } from 'react-icons/si';
 import { ReactComponent as CRALogo } from '../../media/cra-logo.svg';
 import IconLine from '../IconLine';
 import LineDate from '../LineDate';
@@ -20,6 +20,12 @@ const MuseumLine = () => (
         <SiTailwindcss
           title="Tailwind CSS"
           className={`${iconClassName} text-sky-400`}
+        />
+      </LineIcon>
+      <LineIcon title="Netlify" href="https://www.netlify.com/">
+        <SiNetlify
+          title="Netlify"
+          className={`${iconClassName} text-teal-500`}
         />
       </LineIcon>
     </IconLine>

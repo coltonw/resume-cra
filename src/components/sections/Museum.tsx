@@ -16,7 +16,7 @@ const Museum = () => (
     </Paragraph>
     <Paragraph>
       This museum implementation is built using Create React App. For styling it
-      uses Tailwind CSS.
+      uses Tailwind CSS. It is deployed using Netlify.
     </Paragraph>
   </>
 );
